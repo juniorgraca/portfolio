@@ -1,0 +1,226 @@
+.btnInicial{
+  display: flex;
+  justify-content: center;
+}
+
+.separatorBtn{
+  width: 10px;
+}
+.btnCard{
+  width: 150px;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  background-color: #70DC73;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+
+  }
+  .btnCard::before{
+    color: #fff;
+  }
+
+  .containerBtn{
+    
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 154px;
+    height: 42px;
+    background-color: 70DC73;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #70dc7446;
+  }
+  .containerBtn::before{
+    
+    content: "";
+    width: 400px;
+    height: 6px;
+    top: 0px;
+    right: 0px;
+    transition: 1.9s;
+    background:linear-gradient(#ffffff70, #01947483);
+   
+    position: absolute;
+    border-radius: 5px;
+    animation: cardEffect 3.2s;
+    animation-fill-mode:forwards;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease
+  }
+
+  @keyframes cardEffect {
+/*     100%{
+        transform: matrix(0.866,0.7,-1.8,0.9106,0,4)
+    } */
+    0%   {rotate: 60deg; left:-230px; top:0px;}
+    100%  {rotate: 60deg; left:0px; top:0px;}
+   
+    
+  }
+  
+  .btn{
+    font-size: 1em;
+  }
+.containerBtn:hover{
+
+  animation: otherEfect 3.2s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes otherEfect {
+  0% {
+    transform: scale(0.95);
+  }
+  
+  70% {
+    transform: scale(1);
+  
+  }
+  
+  100% {
+    transform: scale(0.95);
+    
+}}
+
+
+
+
+/* BTN LINKENDIN */
+
+.btnCardLink{
+ 
+  width: 150px;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  background-color: #0a66c2;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+
+  }
+  .btnCardLink::before{
+    color: #fff;
+  }
+
+  .containerBtnLink{
+    
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 154px;
+    height: 42px;
+    background-color: 70DC73;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #0a66c2;
+  }
+  .containerBtnLink::before{
+   
+    content: "";
+    width: 400px;
+    height: 6px;
+    top: 0px;
+    right: 0px;
+    transition: 1.9s;
+    background:linear-gradient(#ffffff70, #01947483);
+   
+    position: absolute;
+    border-radius: 5px;
+    animation: cardEffect 3.2s;
+    animation-fill-mode:forwards;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease
+  }
+
+  @keyframes cardEffect {
+
+    0%   {rotate: 60deg; left:-230px; top:0px;}
+    100%  {rotate: 60deg; left:0px; top:0px;}
+   
+    
+  }
+  
+  .btn{
+    font-size: 1em;
+  }
+.containerBtnLink:hover{
+
+  animation: otherEfect 3.2s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes otherEfect {
+  0% {
+    transform: scale(0.95);
+  }
+  
+  70% {
+    transform: scale(1);
+  
+  }
+  
+  100% {
+    transform: scale(0.95);
+    
+}}
+#linkedin span{
+  padding-right: 10px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+#linkedin{
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+#linkedin::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 150px;
+  height:150px;
+  left: 0px;
+  border: 10px solid rgba(255, 255, 255, 0.082);
+  border-radius: 80px;
+  animation: animar 1.5s linear infinite;
+}
+
+@keyframes animar {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+  
+  }
+  
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }}
+
+
+

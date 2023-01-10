@@ -1,0 +1,30 @@
+.titletimeline{
+  text-align: center;
+  margin: 20px 0 10px;
+  color: #70DC73;
+  font-size: 2rem;
+  }
+  
+  .titletimeline i{
+    padding-right: 10px;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: center;
+  }
+  .timeline1{
+    margin-top: 100px;
+    background-color: darkgrey;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    width: 601px;
+    border: 2px solid var(--main-color);
+  }
+  
+
+
+  
+  .timeline3{
+    height: 1900px;
+  }

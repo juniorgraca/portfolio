@@ -1,0 +1,41 @@
+
+.intro {
+  margin-top: 120px;
+  display: flex;
+
+}
+
+.typing {
+  position: relative;
+  margin-left: 10px;
+  
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  margin-top: 30px;
+ background-color: #70DC73;
+  right: -35px;
+  animation: blink 1s infinite ease;
+
+}
+
+.fixed-text {
+  color: #70DC73;
+  display: flex;
+  align-items: center;
+
+ 
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
