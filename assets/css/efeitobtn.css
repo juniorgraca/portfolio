@@ -1,6 +1,8 @@
 .btnInicial{
   display: flex;
   justify-content: center;
+  padding-top: 30px;
+  
 }
 
 .separatorBtn{
@@ -48,7 +50,7 @@
     right: 0px;
     transition: 1.9s;
     background:linear-gradient(#ffffff70, #01947483);
-   
+
     position: absolute;
     border-radius: 5px;
     animation: cardEffect 3.2s;
@@ -59,9 +61,7 @@
   }
 
   @keyframes cardEffect {
-/*     100%{
-        transform: matrix(0.866,0.7,-1.8,0.9106,0,4)
-    } */
+
     0%   {rotate: 60deg; left:-230px; top:0px;}
     100%  {rotate: 60deg; left:0px; top:0px;}
    

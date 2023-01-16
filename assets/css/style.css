@@ -3,14 +3,15 @@
   padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Century Gothic', sans-serif;                                               
+  font-family: 'Century Gothic', sans-serif; 
+ 
 }
 
 body{
   display: -ms-grid;
   place-items: center;
   color: #fff;
-  background: #000;
+  background: rgb(15, 15, 15);
   list-style-type: none;
 }
 

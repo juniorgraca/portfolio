@@ -17,7 +17,7 @@
   width: 20px;
   height: 2px;
   margin-top: 30px;
- background-color: #70DC73;
+  background: linear-gradient(90deg, rgba(9,9,121,0) 0%, rgba(112,220,115,1) 62%, rgba(112,220,115,1) 100%);;
   right: -35px;
   animation: blink 1s infinite ease;
 

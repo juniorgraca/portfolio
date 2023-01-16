@@ -1,30 +1,248 @@
-.titletimeline{
-  text-align: center;
-  margin: 20px 0 10px;
+.titleItem{
   color: #70DC73;
   font-size: 2rem;
-  }
+  padding-bottom: 10px;
+}
+
+.textTime i{
+  padding-right: 3px;
+  font-size: 2rem;
+
+}
+.textTime{
+  color: white;
+  font-size: 1.2rem;
+  padding: 0px 10px 10px 10px;
+  position: relative;
+  bottom: 35px;
+
+}
+
+.containerHome{
+  display: flex;
+  justify-content: center;
+
+}
+
+.initialTimeline{
+  padding-top: 30px;
+ }
+ 
+ .title{
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   color: #70dc7462;
+   padding-left: 100px;
+ }
+ 
+ 
+ .subtitle{
+   padding-top: 1px;
+   display: flex;
+   align-items: baseline;
+   justify-content: center;
+   align-content: center;
+   width: 100%;
   
-  .titletimeline i{
-    padding-right: 10px;
-  }
-  
-  .timeline {
-    display: flex;
-    justify-content: center;
-  }
-  .timeline1{
-    margin-top: 100px;
-    background-color: darkgrey;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    width: 601px;
-    border: 2px solid var(--main-color);
-  }
-  
+ }
+ 
+ .subtitle i{
+   color: #70DC73;
+   font-size: 4rem;
+   padding-right: 15px;
+ }
+ 
+ .subtitle h1{
+   color: aliceblue;
+   padding-right: 10px;
+   font-weight:bolder;
+   font-size: 3.2rem;
+ }
+ 
+ .subtitle h2{
+   font-size: 3rem;
+   color: #70DC73;
+   padding-bottom: 50px;
+   
+ }
+
+ /* TIMELINE INCIIALLL COMEÇA AQ */
+
+ .timeline{
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #70DC73;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  height: 1130px;
+  margin-left: -1px;
+}
+.dot{
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+}
+.dotTime{
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: #535353;
+  border: 2px solid #70DC73;
+  border-radius: 16px;
+  z-index: 1;
+  left: 50%;
+  margin-left: -8px; 
+  bottom:150px;  
+}
+
+.container{
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
 
 
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #70DC73;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #70DC73;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: -75px;
+}
+
+.container.right .date {
+  left: -75px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #F6D155;
+  border: 2px solid #006E51;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #70DC73;
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: #35353565;
+  position: relative;
+  outline: #70DC73 solid 4px;
+  outline-offset: 5px;  
+  border-radius: 20px;
   
-  .timeline3{
-    height: 1900px;
-  }
+  
+}
+
+.container.right .content {
+  padding: 30px 90px 30px 77px;
+  background: #35353565;
+  position: relative;
+  outline: #70DC73 solid 4px;
+  outline-offset: 5px;  
+  border-radius: 20px;
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #70DC73;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+/* .left-title{
+  background-color: rgb(23, 74, 119);
+}
+
+.left-icon{
+  background-color: rgba(50, 3, 94, 0.342);
+}
+
+.left-desc{
+  background-color: rgba(109, 1, 73, 0.342);
+}
+ 
+.right-title{
+  background-color: rgb(23, 74, 119);
+}
+
+.right-icon{
+  background-color: rgba(50, 3, 94, 0.342);
+}
+
+.right-desc{
+  background-color: rgba(109, 1, 73, 0.342);
+}
+  */

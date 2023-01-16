@@ -9,16 +9,18 @@
 }
 
 .helo{
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   font-size: 2rem;
  
 }
 .name{
-  font-size: 4rem;
+
+  font-size: 6rem;
 }
 .nickname{
-  font-size: 4rem;
+  font-size: 6rem;
   padding: 0 10px 0 10px;
   color: #70DC73;
 

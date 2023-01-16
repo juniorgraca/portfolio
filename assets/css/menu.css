@@ -1,9 +1,85 @@
 .menuGlobal{
-
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
+  background-color: rgb(49, 49, 49);
+  height: 70px;
 
 }
 
+.menuGlobalAdd{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(9,9,121,0) 0%, rgba(112,220,115,0.21750707118785018) 0%, rgba(112,220,115,0.19509810760241597) 100%);
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.logo{
+  display: flex;
+  float: left;
+
+}
+
+.menuPrincipal a{
+ color: aliceblue;
+}
+
+.menuPrincipal a:hover{
+  color: rgba(187, 187, 187, 0.534);
+}
+
+.menuPrincipal ul{
+  display: flex;
+  padding-left: 100px;
+}
+
+/* .menuPrincipal ul:hover{
+
+  padding-left: 10px;
+} */
+.career span{
+ 
+
+  width: 100%;
+}
+
+.menuPrincipal li{
+  padding-right: 10px;
+  list-style: none;
+}
+
+ @keyframes MenuOn {
+	0% {
+		opacity: 1;
+		transform: rotateY(-80deg);
+		transform-origin: left;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: left;
+	}
+} 
+
+@keyframes MenuOf {
+  0% {
+		opacity: 1;
+		transform: rotateY(-90deg);
+		transform-origin: left;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: left;
+	}
+  }
